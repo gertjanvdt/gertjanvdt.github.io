@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gertjan van der Toorn</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header id="home">
+      <nav>
+        <div>
+          <img src="img/profile_pic.jpeg" alt="user-img" class="small" />
+          <p class="header_name">Gertjan van der Toorn</p>
+        </div>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li>
+              <a href="#home">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  id="Capa_1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 426.667 426.667"
+                  style="enable-background: new 0 0 426.667 426.667"
+                  xml:space="preserve"
+                  class="nav-icon"
+                >
+                  <g>
+                    <g>
+                      <polygon
+                        points="213.333,32 0,224 64,224 64,394.667 170.667,394.667 170.667,266.667 256,266.667 256,394.667 362.667,394.667     362.667,224 426.667,224   "
+                        fill="white"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <p class="nav-link-text">Home</p>
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 408 408"
+                  style="enable-background: new 0 0 408 408"
+                  xml:space="preserve"
+                  class="nav-icon"
+                >
+                  <g>
+                    <g>
+                      <path
+                        fill="white"
+                        d="M372,88.661H206.32l-33-39.24c-0.985-1.184-2.461-1.848-4-1.8H36c-19.956,0.198-36.023,16.443-36,36.4v240
+			c-0.001,19.941,16.06,36.163,36,36.36h336c19.94-0.197,36.001-16.419,36-36.36v-199C408.001,105.08,391.94,88.859,372,88.661z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <p class="nav-link-text">Portfolio</p>
+              </a>
+            </li>
+            <li>
+              <a href="#about">
+                <svg
+                  viewBox="-42 0 512 512.002"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="nav-icon"
+                >
+                  <path
+                    fill="white"
+                    d="m210.351562 246.632812c33.882813 0 63.222657-12.152343 87.195313-36.128906 23.972656-23.972656 36.125-53.304687 36.125-87.191406 0-33.875-12.152344-63.210938-36.128906-87.191406-23.976563-23.96875-53.3125-36.121094-87.191407-36.121094-33.886718 0-63.21875 12.152344-87.191406 36.125s-36.128906 53.308594-36.128906 87.1875c0 33.886719 12.15625 63.222656 36.132812 87.195312 23.976563 23.96875 53.3125 36.125 87.1875 36.125zm0 0"
+                  />
+                  <path
+                    fill="white"
+                    d="m426.128906 393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-11.578124-4.753907-22.523437-7.957031-32.527343-3.308594-10.339844-7.808594-20.550781-13.371094-30.335938-5.773438-10.15625-12.554688-19-20.164063-26.277343-7.957031-7.613282-17.699219-13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563 0-10.28125 2.144532-20.042969 8.5-6.007812 3.917969-13.035156 8.449219-20.878906 13.460938-6.707031 4.273438-15.792969 8.277344-27.015625 11.902344-10.949219 3.542968-22.066406 5.339844-33.039063 5.339844-10.972656 0-22.085937-1.796876-33.046874-5.339844-11.210938-3.621094-20.296876-7.625-26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.75-6.355468-14.808594-8.5-20.035156-8.5-13.3125 0-25.75 2.253906-36.972656 6.699219-11.257813 4.457031-21.003906 10.578125-28.96875 18.199219-7.605469 7.28125-14.390625 16.121094-20.15625 26.273437-5.558594 9.785157-10.058594 19.992188-13.371094 30.339844-3.199219 10.003906-5.875 20.945313-7.953125 32.523437-2.058594 11.476563-3.457031 22.363282-4.148437 32.363282-.679688 9.796875-1.023438 19.964844-1.023438 30.234375 0 26.726562 8.496094 48.363281 25.25 64.320312 16.546875 15.746094 38.441406 23.734375 65.066406 23.734375h246.53125c26.625 0 48.511719-7.984375 65.0625-23.734375 16.757813-15.945312 25.253906-37.585937 25.253906-64.324219-.003906-10.316406-.351562-20.492187-1.035156-30.242187zm0 0"
+                  />
+                </svg>
+                <p class="nav-link-text">About</p>
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class="nav-icon"
+                >
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          fill="white"
+                          d="M503.28,129.021C437.251,59.583,349.428,21.333,256,21.333S74.749,59.583,8.72,129.021
+				c-11.626,12.229-11.626,32.115,0,44.344l49.194,51.729c11.585,12.146,32.046,12.146,43.63,0
+				c16.481-17.323,35.171-31.583,55.507-42.333c10.189-5.26,16.773-16.313,16.69-26.75l7.418-56.062
+				c54.423-17.396,95.824-17.385,149.706-0.01l7.334,54.667c0,11.823,6.272,22.615,16.523,28.25
+				c20.419,10.802,39.13,25.063,55.611,42.375c5.772,6.094,13.523,9.438,21.815,9.438c8.293,0,16.044-3.344,21.815-9.427
+				l49.319-51.875C514.907,161.135,514.907,141.25,503.28,129.021z"
+                        />
+                        <path
+                          fill="white"
+                          d="M394.792,220.229C385.5,202.813,367.458,192,347.729,192H164.271c-19.729,0-37.771,10.813-47.063,28.229L48.938,348.24
+				c-4.104,7.708-6.271,16.385-6.271,25.094V448c0,23.531,19.146,42.667,42.667,42.667h341.333
+				c23.521,0,42.667-19.135,42.667-42.667v-74.667c0-8.708-2.167-17.385-6.271-25.104L394.792,220.229z M191.979,426.667
+				c-11.771,0-21.333-9.573-21.333-21.333c0-11.76,9.563-21.333,21.333-21.333c11.771,0,21.333,9.573,21.333,21.333
+				C213.313,417.094,203.75,426.667,191.979,426.667z M191.979,362.667c-11.771,0-21.333-9.573-21.333-21.333
+				c0-11.76,9.563-21.333,21.333-21.333c11.771,0,21.333,9.573,21.333,21.333C213.313,353.094,203.75,362.667,191.979,362.667z
+				 M191.979,298.667c-11.771,0-21.333-9.573-21.333-21.333c0-11.76,9.563-21.333,21.333-21.333
+				c11.771,0,21.333,9.573,21.333,21.333C213.313,289.094,203.75,298.667,191.979,298.667z M256,426.667
+				c-11.771,0-21.333-9.573-21.333-21.333c0-11.76,9.563-21.333,21.333-21.333s21.333,9.573,21.333,21.333
+				C277.333,417.094,267.771,426.667,256,426.667z M256,362.667c-11.771,0-21.333-9.573-21.333-21.333
+				c0-11.76,9.563-21.333,21.333-21.333s21.333,9.573,21.333,21.333C277.333,353.094,267.771,362.667,256,362.667z M256,298.667
+				c-11.771,0-21.333-9.573-21.333-21.333c0-11.76,9.563-21.333,21.333-21.333s21.333,9.573,21.333,21.333
+				C277.333,289.094,267.771,298.667,256,298.667z M319.979,426.667c-11.771,0-21.333-9.573-21.333-21.333
+				c0-11.76,9.563-21.333,21.333-21.333c11.771,0,21.333,9.573,21.333,21.333C341.313,417.094,331.75,426.667,319.979,426.667z
+				 M319.979,362.667c-11.771,0-21.333-9.573-21.333-21.333c0-11.76,9.563-21.333,21.333-21.333
+				c11.771,0,21.333,9.573,21.333,21.333C341.313,353.094,331.75,362.667,319.979,362.667z M319.979,298.667
+				c-11.771,0-21.333-9.573-21.333-21.333c0-11.76,9.563-21.333,21.333-21.333c11.771,0,21.333,9.573,21.333,21.333
+				C341.313,289.094,331.75,298.667,319.979,298.667z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <p class="nav-link-text">Contact</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div>
+        <div class="header-bottom-container">
+          <h3>Front End Developer</h3>
+          <p>Driven to create great front end solutions</p>
+          <a href="#portfolio" class="header-action-button">See my work</a>
+        </div>
+        <div class="header-down-arrow">
+          <a href="#portfolio">
+            <img src="img/down-arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="section-header">
+        <h2 id="portfolio">Portfolio</h2>
+        <hr />
+      </div>
+      <!-- TOGGE FOR TILE AND LIST -->
+      <div class="window-view-container">
+        <div class="toggle-box">
+          <div id="toggle-grid-view" class="">
+            <img class="window-view" src="img/square-grid.svg" alt="" />
+          </div>
+          <div id="toggle-list-view" class="">
+            <img class="window-view" src="img/bullet-list.svg" alt="" />
+          </div>
+          <div id="slider" class="switch"></div>
+        </div>
+      </div>
+      <!-- PORTFOLIO -->
+      <section class="portfolio">
+        <!-- GRID VIEW OF PROJECTS -->
+        <div class="grid-container" id="grid-view">
+          <!-- PROJECT CARD -->
+          <div class="project-card">
+            <img src="img/project_img/img_memory-game.png" alt="" />
+            <div class="card-bottom">
+              <div class="project-card-skills">
+                <ul class="project-card-tech">
+                  <li>
+                    <img class="tech-small" src="img/html-5.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/css-3.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/javascript-2.svg" alt="" />
+                  </li>
+                </ul>
+              </div>
+              <div class="project-card-button">
+                <a
+                  href="https://github.com/gertjanvdt/memory-game"
+                  class="btn"
+                  target="_blank"
+                  >View Code</a
+                >
+                <a
+                  href="https://gertjanvdt.github.io/memory-game/"
+                  class="btn"
+                  target="_blank"
+                  >View Live</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- END PROJECT CARD -->
+
+          <!-- PROJECT CARD -->
+          <div class="project-card">
+            <img src="img/project_img/img_amazonclone.png" alt="" />
+            <div class="card-bottom">
+              <div class="project-card-skills">
+                <ul class="project-card-tech">
+                  <li>
+                    <img class="tech-small" src="img/html-5.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/css-3.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/javascript-2.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/react-2.svg" alt="" />
+                  </li>
+                </ul>
+              </div>
+              <div class="project-card-button">
+                <a href="#" class="btn" target="_blank">View Code</a>
+                <a
+                  href="https://clone-1dc03.web.app/"
+                  class="btn"
+                  target="_blank"
+                  >View Live</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- END PROJECT CARD -->
+
+          <!-- PROJECT CARD -->
+          <div class="project-card">
+            <img src="img/project_img/img_project7.png" alt="" />
+            <div class="card-bottom">
+              <div class="project-card-skills">
+                <ul class="project-card-tech">
+                  <li>
+                    <img class="tech-small" src="img/html-5.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/css-3.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/javascript-2.svg" alt="" />
+                  </li>
+                </ul>
+              </div>
+              <div class="project-card-button">
+                <a
+                  href="https://github.com/gertjanvdt/Techdegree-unit-7"
+                  class="btn"
+                  target="_blank"
+                  >View Code</a
+                >
+                <a
+                  href="https://gertjanvdt.github.io/Techdegree-unit-7/"
+                  class="btn"
+                  target="_blank"
+                  >View Live</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- END PROJECT CARD -->
+
+          <!-- PROJECT CARD -->
+          <div class="project-card">
+            <img src="img/project_img/img_project6.png" alt="" />
+            <div class="card-bottom">
+              <div class="project-card-skills">
+                <ul class="project-card-tech">
+                  <li>
+                    <img class="tech-small" src="img/html-5.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/css-3.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/javascript-2.svg" alt="" />
+                  </li>
+                </ul>
+              </div>
+              <div class="project-card-button">
+                <a
+                  href="https://github.com/gertjanvdt/Techdegree-unit-6"
+                  class="btn"
+                  target="_blank"
+                  >View Code</a
+                >
+                <a
+                  href="https://gertjanvdt.github.io/Techdegree-unit-6/"
+                  class="btn"
+                  target="_blank"
+                  >View Live</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- END PROJECT CARD -->
+
+          <!-- PROJECT CARD -->
+          <div class="project-card">
+            <img src="img/project_img/img_bootstrap.png" alt="" />
+            <div class="card-bottom">
+              <div class="project-card-skills">
+                <ul class="project-card-tech">
+                  <li>
+                    <img class="tech-small" src="img/html-5.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/css-3.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/bootstrap-4.svg" alt="" />
+                  </li>
+                </ul>
+              </div>
+              <div class="project-card-button">
+                <a
+                  href="https://github.com/gertjanvdt/Bootstrap"
+                  class="btn"
+                  target="_blank"
+                  >View Code</a
+                >
+                <a
+                  href="https://gertjanvdt.github.io/Bootstrap/"
+                  class="btn"
+                  target="_blank"
+                  >View Live</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- END PROJECT CARD -->
+
+          <!-- PROJECT CARD -->
+          <div class="project-card">
+            <img src="img/project_img/img_project8.png" alt="" />
+            <div class="card-bottom">
+              <div class="project-card-skills">
+                <ul class="project-card-tech">
+                  <li>
+                    <img class="tech-small" src="img/html-5.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/css-3.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/javascript-2.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/api.svg" alt="" />
+                  </li>
+                </ul>
+              </div>
+              <div class="project-card-button">
+                <a
+                  href="https://github.com/gertjanvdt/Techdegree-unit-8"
+                  class="btn"
+                  target="_blank"
+                  >View Code</a
+                >
+                <a
+                  href="https://gertjanvdt.github.io/Techdegree-unit-8/"
+                  class="btn"
+                  target="_blank"
+                  >View Live</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END PROJECT CARD -->
+        <!-- LIST VIEW OF PROJECTS -->
+        <div id="list-view" class="hidden">
+          <!-- PORJECT LIST CARD -->
+          <div class="project-list-card">
+            <div>
+              <img
+                class="project-list-card-img"
+                src="img/project_img/img_memory-game.png"
+                alt="memore game image"
+              />
+            </div>
+            <div>
+              <h3>Memory Game</h3>
+              <p>
+                I created this project with my own creativity and imagination.
+                With the skills learned during the Front End Techdegree I
+                created this game and added new features eacht time like
+                randomizing the location of the cards. At the moment still
+                working on adding some features like multiple players and
+                tracking the score
+              </p>
+              <p>Technologies used with this project:</p>
+              <div class="project-card-list-bottom">
+                <ul class="project-list-card-tech">
+                  <li>
+                    <img class="tech-small" src="img/html-5-black.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/css-3-black.svg" alt="" />
+                  </li>
+                  <li>
+                    <img
+                      class="tech-small"
+                      src="img/javascript-2-black.svg"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+                <div class="project-list-card-button">
+                  <a
+                    href="https://github.com/gertjanvdt/memory-game"
+                    class="btn black"
+                    target="_blank"
+                    >View Code</a
+                  >
+                  <a
+                    href="https://gertjanvdt.github.io/memory-game/"
+                    class="btn black"
+                    target="_blank"
+                    >View Live</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END OF PROJECT CARD -->
+
+          <!-- PORJECT LIST CARD -->
+          <div class="project-list-card">
+            <div>
+              <img
+                class="project-list-card-img"
+                src="img/project_img/img_amazonclone.png"
+                alt="memore game image"
+              />
+            </div>
+            <div>
+              <h3>Amazon Clone</h3>
+              <p>
+                During of my courses we created and clone of the Amazon website.
+                It contains functionality to add and view basket. It is hosted
+                in firebase and reactedd with React. At the moment working on
+                the check-out functionality:
+              </p>
+              <p>Technologies used with this project:</p>
+              <div class="project-card-list-bottom">
+                <ul class="project-list-card-tech">
+                  <li>
+                    <img class="tech-small" src="img/html-5-black.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/css-3-black.svg" alt="" />
+                  </li>
+                  <li>
+                    <img
+                      class="tech-small"
+                      src="img/javascript-2-black.svg"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      class="tech-small"
+                      src="img/react-2-black.svg"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+                <div class="project-list-card-button">
+                  <a href="#" class="btn black" target="_blank">View Code</a>
+                  <a
+                    href="https://clone-1dc03.web.app/"
+                    class="btn black"
+                    target="_blank"
+                    >View Live</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END OF PROJECT CARD -->
+          <!-- PORJECT LIST CARD -->
+          <div class="project-list-card">
+            <div>
+              <img
+                class="project-list-card-img"
+                src="img/project_img/img_project7.png"
+                alt="memore game image"
+              />
+            </div>
+            <div>
+              <h3>Business Dashboard</h3>
+              <p>
+                The goals of this project was to create a business dashboard.
+                Notifications can be read and dismissed, user validation on the
+                form, storing settings in local storage and retreiving them upon
+                opening the site. Using charts.org and JavaScript to make
+                interactive charts
+              </p>
+              <p>Technologies used with this project:</p>
+              <div class="project-card-list-bottom">
+                <ul class="project-list-card-tech">
+                  <li>
+                    <img class="tech-small" src="img/html-5-black.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/css-3-black.svg" alt="" />
+                  </li>
+                  <li>
+                    <img
+                      class="tech-small"
+                      src="img/javascript-2-black.svg"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+                <div class="project-list-card-button">
+                  <a
+                    href="https://github.com/gertjanvdt/Techdegree-unit-7"
+                    class="btn black"
+                    target="_blank"
+                    >View Code</a
+                  >
+                  <a
+                    href="https://gertjanvdt.github.io/Techdegree-unit-7/"
+                    class="btn black"
+                    target="_blank"
+                    >View Live</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END OF PROJECT CARD -->
+          <!-- PORJECT LIST CARD -->
+          <div class="project-list-card">
+            <div>
+              <img
+                class="project-list-card-img"
+                src="img/project_img/img_project6.png"
+                alt="memore game image"
+              />
+            </div>
+            <div>
+              <h3>Wheel Of Success</h3>
+              <p>
+                This game makes the user guess a sentence within 5 tries.
+                Senteces are stored in an array and when player starts the game
+                one is selected at random. Then when player clicks a letter,
+                that letter is compared to all in the sentence. If correct, the
+                letter is displayed and otherwise player looses a life. The game
+                ends when the sentence is guessed or the player has lost 5
+                lives.
+              </p>
+              <p>Technologies used with this project:</p>
+              <div class="project-card-list-bottom">
+                <ul class="project-list-card-tech">
+                  <li>
+                    <img class="tech-small" src="img/html-5-black.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/css-3-black.svg" alt="" />
+                  </li>
+                  <li>
+                    <img
+                      class="tech-small"
+                      src="img/javascript-2-black.svg"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+                <div class="project-list-card-button">
+                  <a
+                    href="https://github.com/gertjanvdt/Techdegree-unit-6/"
+                    class="btn black"
+                    target="_blank"
+                    >View Code</a
+                  >
+                  <a
+                    href="https://gertjanvdt.github.io/Techdegree-unit-6/"
+                    class="btn black"
+                    target="_blank"
+                    >View Live</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END OF PROJECT CARD -->
+          <!-- PORJECT LIST CARD -->
+          <div class="project-list-card">
+            <div>
+              <img
+                class="project-list-card-img"
+                src="img/project_img/img_bootstrap.png"
+                alt="memore game image"
+              />
+            </div>
+            <div>
+              <h3>Simple Bootstrap site</h3>
+              <p>
+                This website was created almost completely using Bootstrap
+                styling and elements, almost no custom CSS was used. Different
+                Bootstrap elements are used like navigation, Jumbotron, grid and
+                forms
+              </p>
+              <p>Technologies used with this project:</p>
+              <div class="project-card-list-bottom">
+                <ul class="project-list-card-tech">
+                  <li>
+                    <img class="tech-small" src="img/html-5-black.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/css-3-black.svg" alt="" />
+                  </li>
+                  <li>
+                    <img
+                      class="tech-small"
+                      src="img/bootstrap-4-black.svg"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+                <div class="project-list-card-button">
+                  <a
+                    href="https://github.com/gertjanvdt/Bootstrap"
+                    class="btn black"
+                    target="_blank"
+                    >View Code</a
+                  >
+                  <a
+                    href="https://gertjanvdt.github.io/Bootstrap/"
+                    class="btn black"
+                    target="_blank"
+                    >View Live</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END OF PROJECT CARD -->
+          <!-- PORJECT LIST CARD -->
+          <div class="project-list-card">
+            <div>
+              <img
+                class="project-list-card-img"
+                src="img/project_img/img_project8.png"
+                alt="memore game image"
+              />
+            </div>
+            <div>
+              <h3>Employee Dashboard</h3>
+              <p>
+                This Employee Dashboard will get random employee data from a
+                public API and display some data in the overview. When employee
+                is clicked a modal will open with more information from the
+                employee. Search functionality was added to search through the
+                empoyees that are displayed
+              </p>
+              <p>Technologies used with this project:</p>
+              <div class="project-card-list-bottom">
+                <ul class="project-list-card-tech">
+                  <li>
+                    <img class="tech-small" src="img/html-5-black.svg" alt="" />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/css-3-black.svg" alt="" />
+                  </li>
+                  <li>
+                    <img
+                      class="tech-small"
+                      src="img/javascript-2-black.svg"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img class="tech-small" src="img/api-black.svg" alt="" />
+                  </li>
+                </ul>
+                <div class="project-list-card-button">
+                  <a
+                    href="https://github.com/gertjanvdt/Techdegree-unit-8"
+                    class="btn black"
+                    target="_blank"
+                    >View Code</a
+                  >
+                  <a
+                    href="https://gertjanvdt.github.io/Techdegree-unit-8/"
+                    class="btn black"
+                    target="_blank"
+                    >View Live</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END OF PROJECT CARD -->
+
+          <!-- END OF LIST VIEW -->
+        </div>
+      </section>
+      <!-- END OF PORTFOLIO -->
+
+      <div class="section-header">
+        <h2 id="about">About Me</h2>
+        <hr />
+      </div>
+      <section>
+        <div class="about-grid-container">
+          <img class="about-img" src="img/profile_pic.jpeg" alt="" />
+
+          <div>
+            <p class="about-description">
+              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+              velit, sed quia non numquam eius modi tempora incidunt ut labore
+              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+              veniam, quis nostrum exercitationem ullam corporis suscipit
+              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+              vel eum iure reprehenderit qui in ea voluptate velit esse quam
+              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+              voluptas nulla pariatur?"
+            </p>
+          </div>
+        </div>
+
+        <div class="section-header">
+          <h4>Technologies</h4>
+          <p>I have experience working with these technologies:</p>
+          <hr />
+          <ul>
+            <li><img class="tech" src="img/html-5-black.svg" alt="" /></li>
+            <li><img class="tech" src="img/css-3-black.svg" alt="" /></li>
+            <li>
+              <img class="tech" src="img/javascript-2-black.svg" alt="" />
+            </li>
+            <li><img class="tech" src="img/react-2-black.svg" alt="" /></li>
+            <li>
+              <img class="tech" src="img/bootstrap-4-black.svg" alt="" />
+            </li>
+            <li>
+              <img class="tech" src="img/api-black.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+
+        <div class="section-header">
+          <h4>References</h4>
+          <hr />
+        </div>
+        <div class="slider">
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+            <!-- Full-width slides/quotes -->
+            <div class="mySlides">
+              <div>
+                <img class="quote-img" src="img/lieke.jpeg" alt="" />
+
+                <div>
+                  <p class="author">
+                    Lieke Fransen (Global Air Director, manager):
+                  </p>
+                  <q
+                    >He is a quick learner and dedicated to deliver good work in
+                    time, alone or with colleagues. He is an expert in th e
+                    online travel business though capable to translate his
+                    experience and knowledge in other businesses. Gertjan is a
+                    great manager and trainer and creates a good atmosphere
+                    amongst the team members.</q
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <div>
+                <img class="quote-img" src="img/kate.jpeg" alt="" />
+
+                <div>
+                  <p class="author">
+                    Kate Jaffar (Air Team Specialist, direct report):
+                  </p>
+                  <q
+                    >A motivational and inspiring leader! A manager who is also
+                    a mentor,coach and a great sounding board. Great Analytical
+                    thinking skills and always gives constructive feedback!
+                    Anyone is lucky to have Gertjan as a team member or
+                    manager!</q
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <div>
+                <img class="quote-img" src="img/harumi.jpeg" alt="" />
+
+                <div>
+                  <p class="author">
+                    Harumi Kitano (Pricing Analyst, co-worker):
+                  </p>
+                  <q
+                    >Gertjan is dependent, efficient, and enjoyable to work
+                    with. He approaches problems with a logical and analytical
+                    perspective, and will get to the bottom of any issue
+                    effectively. His can-do attitude makes him very approachable
+                    and I know that I can rely on him for any assistance.
+                  </q>
+                </div>
+              </div>
+            </div>
+
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <!-- Dots/bullets/indicators -->
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>
+            <strong>Let's connect! </strong>There are many ways to get in touch
+            with me:
+          </p>
+          <hr />
+        </div>
+        <div class="contact-container">
+          <!-- contact cards -->
+          <div class="contact">
+            <a class="contact-item" href="mailto:gertjanvdt@gmail.com.com">
+              <img src="img/email.svg" alt="email-logo" />
+              <p>Send me an email.</p>
+            </a>
+          </div>
+
+          <div class="contact">
+            <a
+              class="contact-item"
+              href="https://github.com/gertjanvdt"
+              target="_blank"
+            >
+              <img src="img/github-sign.svg" alt="github-logo" />
+              <p>View all my code.</p>
+            </a>
+          </div>
+          <div class="contact">
+            <a
+              class="contact-item"
+              href="https://www.linkedin.com/in/gvandertoorn/"
+              target="_blank"
+            >
+              <img src="img/linkedin.svg" alt="linkedin-logo" />
+              <p>Let's grow our network on LinkedIn.</p>
+            </a>
+          </div>
+          <div class="contact">
+            <a
+              class="contact-item"
+              href="https://www.facebook.com/gertjan83/"
+              target="_blank"
+            >
+              <img src="img/facebook.svg" alt="facebook-logo" />
+              <p>If you'd like to be social.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>{ 100% coded and designed by Gertjan van der Toorn in 2020 }</p>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,530 @@
+* {
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+/*==================
+HEADER AND NAV
+ =================== */
+
+header {
+  background-image: url("../img/laptop_code.jpeg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-color: #d6c3c3;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 3em;
+  /* opacity: 0.8; */
+}
+
+nav {
+  background-color: #121921;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+  opacity: 0.9;
+}
+
+.header-action-button,
+.btn {
+  background: none;
+  border: 2px white solid;
+  padding: 0.5em;
+  border-radius: 9px;
+  width: 49%;
+  color: white;
+}
+
+.black {
+  border: 2px black solid;
+  color: black;
+}
+
+.btn:hover,
+.header-action-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.black:hover {
+  background-color: black;
+  color: white;
+}
+
+.header-down-arrow {
+  width: 55px;
+  margin: 1em auto;
+  opacity: 0.9;
+}
+
+.round-button > img {
+  width: 80%;
+  margin: auto;
+}
+
+.header-bottom-container {
+  margin: 0 5em;
+  color: white;
+}
+
+.nav-links-container {
+  width: 80%;
+}
+
+.nav-links,
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-icon {
+  height: 20px;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  /* color: white; */
+}
+
+a:hover {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+/* Profile picture */
+.small {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 1em;
+  border: white 2px solid;
+}
+
+.header_name,
+.nav-link-text {
+  display: none;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* =====================
+MAIN SECTION 
+======================== */
+
+/* HEADERS OF SECTIONS */
+.section-header {
+  width: 90%;
+  margin: 3em auto;
+  text-align: center;
+}
+
+/* PORTFOLIO SECTION  */
+.portfolio {
+  width: 90%;
+  margin: auto;
+}
+
+/* VIEW TYPE TOGGLE */
+.window-view-container {
+  display: none;
+}
+
+.toggle-box {
+  display: flex;
+  border: 2px solid;
+  border-radius: 8px;
+  position: relative;
+}
+
+.toggle-box > div {
+  padding: 0.5em;
+}
+
+.window-view {
+  width: 30px;
+  height: 30px;
+  margin: 0 1em;
+}
+
+.switch {
+  height: 100%;
+  width: 50%;
+  background: #d4d4d4;
+  position: absolute;
+  z-index: -99;
+  right: 50%;
+  transition: right 0.5s ease;
+}
+
+/* PROJECT CARD GRID VIEW */
+.project-card {
+  width: 90%;
+  margin: 2em auto;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+}
+
+.project-card > img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-card-description,
+.project-card-skills {
+  margin: 2em 0;
+}
+
+.project-card-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card-tech > * {
+  padding: 0.2em.5em;
+  border-radius: 15px;
+  background: black;
+  color: white;
+}
+
+.card-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  justify-content: space-between;
+  width: 100%;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.card-bottom:hover {
+  opacity: 0.7;
+}
+
+.tech {
+  width: 30px;
+  height: 30px;
+}
+
+.tech-small {
+  width: 30px;
+  height: 30px;
+}
+
+/* PROJECT CARD LIST VIEW */
+.project-list-card {
+  display: flex;
+  margin: auto;
+  margin-bottom: 5em;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.project-list-card-img {
+  width: 20em;
+  object-fit: cover;
+}
+
+.project-list-card > div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  justify-content: space-between;
+}
+
+.project-list-card-tech {
+  justify-content: normal;
+  margin-bottom: 1em;
+}
+
+.project-list-card-tech > li {
+  margin-right: 2em;
+}
+
+.project-card-list-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ABOUT ME SECTION */
+
+.about-img {
+  width: 60%;
+  margin: auto;
+  display: block;
+  border-radius: 20%;
+  border: 3px solid;
+  box-shadow: 6px 7px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.about-description {
+  padding: 1em;
+}
+/* SLIDER */
+
+.slider {
+  background-image: url("../img/desk.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: black;
+  opacity: 0.8;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #888;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 10px;
+  background: black;
+  opacity: 0.8;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+  color: white;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: white;
+  font-weight: bold;
+}
+
+/* Quote person image */
+.quote-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px white solid;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+  width: 90%;
+  margin: 1em auto;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 0.5em;
+}
+
+.contact-item:hover,
+.project-list-card:hover {
+  box-shadow: 2px 2px 15px 8px rgba(0, 0, 0, 0.75);
+}
+
+.contact-item > img {
+  width: 50px;
+}
+
+.contact-item > p {
+  color: black;
+  margin: 0 0.5em;
+}
+
+footer {
+  background-image: url("../img/js_image.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  margin-top: 3em;
+  background-color: lightgrey;
+}
+
+footer > div {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  opacity: 0.7;
+  color: white;
+}
+
+footer > div > p {
+  padding: 0 1em;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .header_name {
+    display: inline;
+  }
+
+  .nav-links-container {
+    width: 50%;
+  }
+
+  .window-view-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    margin: 2em auto;
+  }
+
+  .tech {
+    width: 50px;
+    height: 50px;
+  }
+
+  .grid-container {
+    display: grid;
+    /* grid-template-columns: repeat(2, auto); */
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+  }
+
+  .about-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .contact {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-icon {
+    display: none;
+  }
+
+  .nav-link-text {
+    display: inline;
+    color: white;
+    padding: 0.5em;
+  }
+
+  .nav-link-text:hover {
+    border-bottom: 2px solid white;
+  }
+
+  .nav-links-container {
+    width: 40%;
+  }
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .project-card-list-bottom {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .project-list-card-button {
+    width: 50%;
+  }
+
+  .project-list-card-tech {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .tech-small {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.hidden {
+  display: none;
+}
