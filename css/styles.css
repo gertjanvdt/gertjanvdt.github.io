@@ -467,6 +467,8 @@ footer > div > p {
   .about-grid-container {
     display: grid;
     grid-template-columns: repeat(2, auto);
+    width: 90%;
+    margin: auto;
   }
 
   .contact-container {
